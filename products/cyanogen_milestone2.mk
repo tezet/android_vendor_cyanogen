@@ -15,15 +15,15 @@ PRODUCT_BRAND := MOTO
 PRODUCT_DEVICE := milestone2
 PRODUCT_MODEL := A953
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_SBF := 3.4.2-179-4
-PRODUCT_SFX := JOREM_U3
+PRODUCT_SBF := 2.4.24
+PRODUCT_SFX := MILS2_U6
 
 #
 # Set ro.modversion
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%y%m%d-%H%M)-NIGHTLY-Jordan
+        ro.modversion=CyanogenMod-7-$(shell date +%y%m%d-%H%M)-NIGHTLY-Milestone2
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
