@@ -38,17 +38,18 @@ UTC_DATE := $(shell date +%s)
 DATE     := $(shell date +%Y%m%d)
 
 PRODUCT_BUILD_PROP_OVERRIDES := \
-BUILD_ID=GWK74 \
-BUILD_DISPLAY_ID="Gingerbread GWK74" \
+BUILD_ID=MILS2_U6_2.4.24 \
+BUILD_DISPLAY_ID="MILS2_U6_2.4.24" \
 PRODUCT_NAME=${PRODUCT_MODEL}_${PRODUCT_SFX} \
 TARGET_DEVICE=milestone2 \
-BUILD_FINGERPRINT=MOTO/${PRODUCT_MODEL}_${PRODUCT_SFX}/milestone2/milestone2:2.3.7/${PRODUCT_SBF}/${UTC_DATE}:user/release-keys \
+BUILD_FINGERPRINT=MOTO/RTGB/umts_milestone2/A953:2.2.2/MILS2_U6_2.4.24/8481072:user/ota-rel-keys,release-keys \
 PRODUCT_BRAND=MOTO \
-PRIVATE_BUILD_DESC="milestone2-user 2.3.7 ${PRODUCT_SFX}_${PRODUCT_SBF} ${UTC_DATE} release-keys" \
+PRIVATE_BUILD_DESC="umts_milestone2-user 2.2.2 MILS2_U6_2.4.24 8481072 ota-rel-keys,release-keys" \
 BUILD_NUMBER=${DATE} \
 BUILD_VERSION_TAGS=release-keys \
 TARGET_BUILD_TYPE=user \
-USER=CyanogenDefy
+USER=a17935
+
 
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
