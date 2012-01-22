@@ -11,11 +11,11 @@ $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 # Setup device specific product configuration.
 #
 PRODUCT_NAME := cyanogen_milestone2
-PRODUCT_BRAND := MOTO
+PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := milestone2
-PRODUCT_MODEL := A953
+PRODUCT_MODEL := MotoA953
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_SBF := 2.4.24
+PRODUCT_SBF := 4.1-22
 PRODUCT_SFX := MILS2_U6
 
 #
@@ -38,17 +38,17 @@ UTC_DATE := $(shell date +%s)
 DATE     := $(shell date +%Y%m%d)
 
 PRODUCT_BUILD_PROP_OVERRIDES := \
-BUILD_ID=MILS2_U6_2.4.24 \
-BUILD_DISPLAY_ID="MILS2_U6_2.4.24" \
+BUILD_ID=MILS2_U6_4.1-22 \
+BUILD_DISPLAY_ID="MILS2_U6_4.1-22" \
 PRODUCT_NAME=${PRODUCT_MODEL}_${PRODUCT_SFX} \
 TARGET_DEVICE=milestone2 \
-BUILD_FINGERPRINT=MOTO/RTGB/umts_milestone2/A953:2.2.2/MILS2_U6_2.4.24/8481072:user/ota-rel-keys,release-keys \
+BUILD_FINGERPRINT=otorola/RTGB/umts_milestone2:2.3.4/MILS2_U6_4.1-22/1317097892:user/release-keys \
 PRODUCT_BRAND=MOTO \
-PRIVATE_BUILD_DESC="umts_milestone2-user 2.2.2 MILS2_U6_2.4.24 8481072 ota-rel-keys,release-keys" \
+PRIVATE_BUILD_DESC="umts_milestone2-user 2.3.4 MILS2_U6_4.1-22 1317097892 release-keys" \
 BUILD_NUMBER=${DATE} \
 BUILD_VERSION_TAGS=release-keys \
 TARGET_BUILD_TYPE=user \
-USER=a17935
+USER=kxcr46
 
 
 PRODUCT_COPY_FILES += \
