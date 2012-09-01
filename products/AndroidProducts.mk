@@ -26,6 +26,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_inc.mk \
     $(LOCAL_DIR)/cyanogen_iyokan.mk \
     $(LOCAL_DIR)/cyanogen_jordan.mk \
+    $(LOCAL_DIR)/cyanogen_galaxy5.mk \
     $(LOCAL_DIR)/cyanogen_galaxys2.mk \
     $(LOCAL_DIR)/cyanogen_galaxys2att.mk \
     $(LOCAL_DIR)/cyanogen_galaxysbmtd.mk \
@@ -61,6 +62,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_smb_b9701.mk \
     $(LOCAL_DIR)/cyanogen_smultron.mk \
     $(LOCAL_DIR)/cyanogen_speedy.mk \
+    $(LOCAL_DIR)/cyanogen_sunfire.mk \
     $(LOCAL_DIR)/cyanogen_supersonic.mk \
     $(LOCAL_DIR)/cyanogen_tass.mk \
     $(LOCAL_DIR)/cyanogen_u8150.mk \
