@@ -50,6 +50,13 @@ BUILD_VERSION_TAGS=release-keys \
 TARGET_BUILD_TYPE=user \
 USER=kxcr46
 
+# OTA updater
+PRODUCT_PROPERTY_OVERRIDES += \
+    otaupdater.otaid=m2_cm7 \
+    otaupdater.otatime=$(shell date +%Y%m%d-%H%M) \
+    otaupdater.otaver=$(shell date +%Y-%m-%d_%H_%M) \
+    otaupdater.sdcard.os=sdcard \
+    otaupdater.sdcard.recovery=sdcard
 
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
